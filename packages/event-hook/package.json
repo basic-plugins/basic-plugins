@@ -1,6 +1,6 @@
 {
   "name": "@basic-plugins/event-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Event hook for basic plugins.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -38,6 +38,6 @@
   "homepage": "https://github.com/basic-plugins/basic-plugins.git",
   "repository": {
     "type": "git",
-    "url": "git@github.com:basic-plugins/basic-plugins.git"
+    "url": "git+ssh://git@github.com/basic-plugins/basic-plugins.git"
   }
 }

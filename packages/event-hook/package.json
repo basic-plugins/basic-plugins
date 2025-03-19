@@ -1,0 +1,43 @@
+{
+  "name": "@basic-plugins/event-hook",
+  "version": "1.0.0",
+  "description": "Event hook for basic plugins.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/typings/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && npm run build:esm && npm run build:cjs && npm run build:umd && npm run build:typings",
+    "build:esm": "tsc -outDir dist/esm -module ES6",
+    "build:cjs": "tsc -outDir dist/cjs -module commonjs",
+    "build:umd": "tsc -outDir dist/umd -module umd",
+    "build:typings": "tsc -declaration true -emitDeclarationOnly true -declarationDir dist/typings",
+    "clean": "rimraf dist",
+    "test": "mocha"
+  },
+  "keywords": [
+    "event",
+    "hook"
+  ],
+  "author": "wangzhiguo.engineer@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "chai": "^4.5.0",
+    "eslint": "^8.46.0",
+    "mocha": "^10.8.2",
+    "rimraf": "^5.0.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/basic-plugins/basic-plugins.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:basic-plugins/basic-plugins.git"
+  }
+}
